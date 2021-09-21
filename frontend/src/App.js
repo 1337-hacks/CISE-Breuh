@@ -12,11 +12,7 @@ class App extends Component {
     }
   }
 
-// class App = () => {
-//   return (
-//     <div className='DisplayEvidence'
-//   )
-// }
+
   makeIncrementer = amount => () =>
     this.setState(prevState => ({
       count: prevState.count + amount,
