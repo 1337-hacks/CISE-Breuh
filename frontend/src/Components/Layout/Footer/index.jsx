@@ -1,14 +1,17 @@
 import React from 'react';
-import { FooterContainer, copyright } from './footer';
+import { 
+    FooterContainer, 
+    Copyright 
+} from './Footer';
 
-const footer = () => {
-    return(
-        <FooterContainer>
-            <copyright> copyright </copyright>
-        </FooterContainer>
+const Footer = () => {
+    return (
+      <FooterContainer>
+        <Copyright> <p>Copyrights</p> </Copyright>
+      </FooterContainer>
     );
 };
 
 
 
-export default footer;
+export default Footer;

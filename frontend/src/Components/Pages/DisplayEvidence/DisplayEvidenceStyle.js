@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 
-export const PageHeader = styled.div`
-
-`;
 
 export const PageWrapper = styled.div`
     background-image: url('/testBackground.png');
@@ -15,10 +12,5 @@ export const PageWrapper = styled.div`
 `;
 
 export const PageContainer = styled.div`
-
-`;
-
-
-export const PageFooter = styled.div`
 
 `;

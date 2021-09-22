@@ -1,30 +1,47 @@
-import { PageWrapper, PageHeader, PageContainer, PageFooter } from "./DisplayEvidenceStyle";
+import { PageWrapper, PageContainer } from "./DisplayEvidenceStyle";
+import { Link } from "react-router-dom";
+
+// import articles from "../../../../../backend/dummydata/articles";
+// import Styles from "../../Evidence-Table/tablestyle";
+// import Table from "../../Evidence-Table/evidencetable";
+// import tablecolumns from "../../Evidence-Table/tablecolumns";
+// import Dropdown from "../../Evidence-Table/dropdown";
+
+
 
 const DisplayEvidencePage = () => {
 
     /* Logic goes here eg. pull data from DB */
     
-    return ( /* HTML code goes here */
-        <>
-        <PageHeader> {/* Container for Header */}
-            <h1>Test Header</h1>
-        </PageHeader>
-
-        <PageWrapper> {/* Container for Page Background */}
-            <PageContainer> {/* Container for Page Content */}
-                {/* Table goes here */}
-
-                <h1>Data</h1>
-                <p>Yes lmao eks dee 1234</p>
-            </PageContainer>
+    return (
+      /* HTML code goes here */
+      <>
+        <PageWrapper>
+          {" "}
+          {/* Container for Page Background */}
+          <PageContainer>
+            {" "}
+            {/* Container for Page Content */}
+            {/* <div>
+                    <h2>Select SE Practice to get evidence for the claimed benefits</h2>
+                    <Dropdown/>
+                    <Styles>
+                        <Table
+                        data={articles}
+                        columns={tablecolumns}
+                        />
+                    </Styles>
+                </div> */}
+            <h1>Data</h1>
+            <p>Yes lmao eks dee 1234</p>
+            
+            <Link to="/">
+              <button> TEST </button>
+            </Link>
+          </PageContainer>
         </PageWrapper>
-
-        <PageFooter> {/* Container for Page Footer */}
-            <h1>Test Footer</h1>
-        </PageFooter>
-        </>
+      </>
     );
-
 };
 
 export default DisplayEvidencePage;
