@@ -1,20 +1,21 @@
 import { Link } from "react-router-dom";
-import { BackgroundWrapper, ContentContainer } from "./HomeStyle";
+import { 
+    PageWrapper,
+    ContentContainer, 
+    PageHeader,
+    DisplayButton } 
+    from "./HomeStyle";
 
 const HomePage = () => {
-
     return(
-        <>
-            <BackgroundWrapper>
-                <ContentContainer>
-                    <div>
-                        <Link to='/displayEvidence'>
-                            <button> TEST </button>
-                        </Link>
-                    </div>
-                </ContentContainer>
-            </BackgroundWrapper>
-        </>
+        <PageWrapper>
+            <ContentContainer>
+                <PageHeader>SEPER DRAFT HOME PAGE</PageHeader>
+                <Link to='/displayEvidence'>
+                    <DisplayButton> Display Evidence </DisplayButton>
+                </Link>
+            </ContentContainer>
+        </PageWrapper>
     );
 };
 

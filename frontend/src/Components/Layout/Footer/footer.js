@@ -2,18 +2,15 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.div`
   background-color: lightblue;
-  text-align: left;
-  padding: 9px;
+  text-align: center;
+  padding: 5px;
   font-size: 0px;
-  border: 0px;
-  border-top: 1px;
-  border-style: ridge;
 `;
 
 export const OtherFooter = styled.div`
   text-align: center;
   background-color: lightblue;
-  padding: 3px;
+  padding: 0px;
   font-size: 0px;
   border: 0px;
   border-top: 1px;
