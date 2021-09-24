@@ -14,9 +14,10 @@ import {
 
 const Footer = () => {
     return (
+      // sadas
       <OtherFooter>
         <Aligning>
-          <Seperbaby> Seper | Articles & SE Practices </Seperbaby>
+          <Seperbaby> Seper | Articles & SE Practices </Seperbaby> 
           <Anotherliner>
               <Link to = '/'>
                <AboutUs> About Us</AboutUs>
