@@ -1,5 +1,5 @@
 import React from "react";
-import { HeaderContainer, Logo, LogoWrapper } from "./Header";
+import { HeaderContainer, Logo, LogoWrapper } from "./header";
 import { Link } from "react-router-dom";
 
 const Header = () => {

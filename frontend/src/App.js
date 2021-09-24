@@ -8,20 +8,20 @@ import HomePage from './Components/Pages/Home';
 import DisplayEvidencePage from './Components/Pages/DisplayEvidence';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      count: 0,
-    }
+  constructor(props) {
+    super(props);
+    this.state = { apiResponse: "" };
   }
 
+  callAPI() {
+      fetch("http://localhost:9000/testAPI")
+          .then(res => res.text())
+          .then(res => this.setState({ apiResponse: res }));
+  }
 
-  // makeIncrementer = amount => () =>
-  //   this.setState(prevState => ({
-  //     count: prevState.count + amount,
-  //   }));
-
-  // increment = this.makeIncrementer(1);
+  componentWillMount() {
+      this.callAPI();
+  }
 
   render() {
     return (

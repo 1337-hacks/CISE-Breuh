@@ -10,7 +10,7 @@ import {
     Evidences,
     Anotherliner,
     Contacts,
-} from './Footer';
+} from './footer';
 
 const Footer = () => {
     return (
