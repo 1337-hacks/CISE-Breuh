@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
     border-color: black;
     border: 0px;
     border-bottom: 1px;
-    border-style: solid;
+    border-style: transparent;
 `;
 
 export const LogoWrapper = styled.div`

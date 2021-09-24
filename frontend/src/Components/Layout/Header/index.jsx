@@ -10,7 +10,7 @@ const Header = () => {
                 <Logo src='/seperlogo.png' alt='Seper Logo' />
             </Link>
             </LogoWrapper>            
-            <h1> header </h1>
+            
         </HeaderContainer>
     );
 };
