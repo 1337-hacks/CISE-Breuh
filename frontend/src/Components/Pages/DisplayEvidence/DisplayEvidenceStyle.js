@@ -5,6 +5,7 @@ export const PageWrapper = styled.div`
     display: grid;
     place-content: center;
     height: 82vh;
+    padding-bottom: 50px;
 
     background-color: #345B63;
 
@@ -17,7 +18,7 @@ export const PageWrapper = styled.div`
 export const PageContainer = styled.div`
     display: grid;
     place-content: center;
-    height: 50px;
+    height: 100%;
 `;
 
 export const Data = styled.div`

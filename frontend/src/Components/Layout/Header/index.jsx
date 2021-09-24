@@ -1,5 +1,12 @@
 import React from "react";
-import { HeaderContainer, Logo, LogoWrapper, NavBar, NavButtons, NavList } from "./Header";
+import { 
+    HeaderContainer, 
+    Logo, 
+    LogoWrapper, 
+    NavBar, 
+    NavButtons, 
+    NavList 
+} from "./Header";
 import { Link, } from "react-router-dom";
 
 const Header = () => {
