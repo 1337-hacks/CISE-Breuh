@@ -1,6 +1,6 @@
 import React from "react";
-import { HeaderContainer, Logo, LogoWrapper } from "./header";
-import { Link } from "react-router-dom";
+import { HeaderContainer, Logo, LogoWrapper, NavBar, NavButtons, NavList } from "./Header";
+import { Link, } from "react-router-dom";
 
 const Header = () => {
     return (
@@ -10,9 +10,22 @@ const Header = () => {
                 <Logo src='/seperlogo.png' alt='Seper Logo' />
             </Link>
             </LogoWrapper>            
-            <Link to="/">
-              <button> TEST </button>
-            </Link>
+            <NavBar>
+                <NavList>
+                    <Link to = '/'>
+                        <NavButtons> Home </NavButtons>
+                    </Link>
+                    <Link to = '/'>
+                        <NavButtons> Search? </NavButtons>
+                    </Link>
+                    <Link to = '/'>
+                        <NavButtons> Articles </NavButtons>
+                    </Link>
+                    <Link to = '/'>
+                        <NavButtons> SE Practices </NavButtons>
+                    </Link>
+                </NavList>
+            </NavBar>
         </HeaderContainer>
     );
 };
