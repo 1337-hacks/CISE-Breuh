@@ -31,7 +31,7 @@ class App extends Component {
             <Switch>
               <Route path="/" component={HomePage} exact />
               <Route path="/displayEvidence" component={DisplayEvidencePage} />
-            </Switch>;
+            </Switch>
           </PageLayout>
         </Router>
 

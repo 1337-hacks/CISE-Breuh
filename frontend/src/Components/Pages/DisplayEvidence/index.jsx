@@ -45,4 +45,4 @@ const DisplayEvidencePage = () => {
     );
 };
 
-export default DisplayEvidencePage;
+export default DisplayEvidencePage
