@@ -1,27 +1,19 @@
 const express = require("express");
-const articles = require("./dummydata/articles");
-
-const server = express();
-
-const dotenv = require("dotenv");
-dotenv.config();
-const PORT = process.env.PORT || 5000;
-
-server.get('/', (req,res) => 
-{
-    res.send("API is running");
+const app = express();
+const cors = require("cors");
+require("dotenv").config({ path: "./config.env" });
+const port = process.env.PORT || 7000;
+app.use(cors());
+app.use(express.json());
+app.use(require("./routes/record"));
+// get driver connection
+const dbo = require("./db/conn");
+ 
+app.listen(port, () => {
+  // perform a database connection when server starts
+  dbo.connectToServer(function (err) {
+    if (err) console.error(err);
+ 
+  });
+  console.log(`Server is running on port: ${port}`);
 });
-
-server.get('/api/articles', (req,res) =>
-{
-    res.json(articles);
-});
-
-server.get('/api/articles/:id', (req,res) => 
-{
-    const article = articles.find((n) => n._id === req.params.id);
-    res.send(article);
-    console.log(req.params);
-});
-
-server.listen(PORT, console.log(`server is working and listening on PORT ${PORT}`));
