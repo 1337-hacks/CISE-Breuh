@@ -7,11 +7,11 @@ import {
   PageHeader
 } from "./DisplayEvidenceStyle";
 
-// import articles from "../../../../../backend/dummydata/articles";
-// import Styles from "../../Evidence-Table/tablestyle";
-// import Table from "../../Evidence-Table/evidencetable";
-// import tablecolumns from "../../Evidence-Table/tablecolumns";
+import articles from "./../../Evidence-Table/articles"
+import Table from "../../Evidence-Table/evidencetable";
+import tablecolumns from "../../Evidence-Table/tablecolumns";
 // import Dropdown from "../../Evidence-Table/dropdown";
+// import Styles from "../../Evidence-Table/tablestyle";
 
 const DisplayEvidencePage = () => {
 
@@ -24,17 +24,16 @@ const DisplayEvidencePage = () => {
           {/* Container for Page Content */}
           <PageHeader>View Evidence</PageHeader>
           <Data>
-            <p>This is where data is</p>
-            {/* <div>
-                  <h2>Select SE Practice to get evidence for the claimed benefits</h2>
-                  <Dropdown/>
-                  <Styles>
-                      <Table
-                      data={articles}
-                      columns={tablecolumns}
-                      />
-                  </Styles>
-              </div> */}
+            <div>
+                <h2>Select SE Practice to get evidence for the claimed benefits</h2>
+                {/* <Dropdown/>
+                <Styles> */}
+                    <Table
+                    data={articles}
+                    columns={tablecolumns}
+                    />
+                {/* </Styles> */}
+            </div>
               <Link to="/">
             <DisplayButton> Home </DisplayButton>
           </Link>

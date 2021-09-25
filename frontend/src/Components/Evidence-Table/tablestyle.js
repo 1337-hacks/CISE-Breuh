@@ -4,11 +4,13 @@ const Styles = styled.div `
   table {
     width: 100%;
     border-spacing: 0;
-    border: 1px solid black;
+    border: 1px ;
+    border-style: solid;
+    border-color: black;
     tr {
       :last-child {
         td {
-          border-bottom: 0;
+          border-bottom: 1px;
         }
       }
     }
@@ -16,8 +18,10 @@ const Styles = styled.div `
     td {
       margin: 0;
       padding: 1rem;
-      border-bottom: 1px solid black;
-      border-right: 1px solid black;
+      border-bottom: 1px;
+      border-right: 1px;
+      border-style: solid;
+      border-color: black;
       :last-child {
         border-right: 0;
       }
