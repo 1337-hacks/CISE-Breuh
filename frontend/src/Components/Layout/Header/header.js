@@ -4,7 +4,7 @@ export const HeaderContainer = styled.header`
     background-color: aquamarine;
     display: flex;
     justify-content: space-around;
-    height: 12vh;
+    height: 8vh;
     border-color: black;
     border: 0px;
     border-bottom: 1px;

@@ -10,7 +10,7 @@ import {
   PageHeader
 } from "./DisplayEvidenceStyle";
 
-import articles from "./../../Evidence-Table/articles"
+// import articles from "./../../Evidence-Table/articles"
 import Table from "../../Evidence-Table/evidencetable";
 import tablecolumns from "../../Evidence-Table/tablecolumns";
 // import Dropdown from "../../Evidence-Table/dropdown";
@@ -28,24 +28,23 @@ class DisplayEvidencePage extends Component {
 
   /* Logic goes here eg. pull data from DB */
 
-  // componentDidMount() {
-  //   // console.log("Print id: " + this.props.match.params.id);
-  //   axios
-  //     .get('/routes/articles/'+this.props.match.params.id)
-  //     .then(res => {
-  //       // console.log("Print-showBookDetails-API-response: " + res.data);
-  //       this.setState({
-  //         articles: res.data
-  //       })
-  //     })
-  //     .catch(err => {
-  //       console.log("Error from ShowBookDetails");
-  //     })
-  // };
+  componentDidMount() {
+    console.log("Print id: " + this.props.match.params.id);
+    axios.get('/routes/articles/'+this.props.match.params.id)
+      .then(res => {
+        console.log("Print-showBookDetails-API-response: " + res.data);
+        this.setState({
+          articles: res.data
+        })
+      })
+      .catch(err => {
+        console.log("Error from ShowBookDetails");
+      })
+  };
 
   render() {
 
-    //const articles = this.state.articles;
+    const articles = this.state.articles;
 
     return (
       <PageWrapper>
@@ -58,7 +57,8 @@ class DisplayEvidencePage extends Component {
                 <h2>Select SE Practice to get evidence for the claimed benefits</h2>
                 {/* <Dropdown/>
                 <Styles> */}
-                    <Table data={articles} columns={tablecolumns}/>
+                    {/* <Table data={articles} columns={tablecolumns}/> */}
+                    
                 {/* </Styles> */}
             </div>
               <Link to="/">

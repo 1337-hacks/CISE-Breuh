@@ -6,7 +6,7 @@ import {
     NavBar, 
     NavButtons, 
     NavList 
-} from "./header";
+} from "./Header";
 import { Link, } from "react-router-dom";
 
 const Header = () => {
