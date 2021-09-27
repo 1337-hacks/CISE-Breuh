@@ -10,7 +10,7 @@ import {
     Evidences,
     Anotherliner,
     Contacts,
-} from './Footer';
+} from './footer';
 
 const Footer = () => {
     return (
@@ -31,7 +31,7 @@ const Footer = () => {
           </Anotherliner>
         </Aligning>
       <FooterContainer>
-        <Copyright> © 2021 SEPER Certified Boy Lover </Copyright>
+        <Copyright> © 2021 SEPER </Copyright>
       </FooterContainer>
       </OtherFooter>
     );

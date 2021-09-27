@@ -6,16 +6,11 @@ const cors = require("cors");
 require("dotenv").config({ path: "./config.env" });
 const port = process.env.PORT || 7000;
 
-mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://elijah2:mongodbcoolpassword@seper-db.f19fc.mongodb.net/seper_database?retryWrites=true&w=majority", {useNewUrlParser: true});
-
-//import articleModel from "./models/articleModel";
-
 app.use(cors());
 app.use(express.json());
 app.use(require("./routes/articles"));
 
-//get driver connection
+// get driver connection
 const dbo = require("./db/conn");
  
 app.listen(port, () => {
