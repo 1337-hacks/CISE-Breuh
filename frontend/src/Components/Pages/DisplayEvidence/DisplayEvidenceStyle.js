@@ -4,9 +4,8 @@ import styled from 'styled-components';
 export const PageWrapper = styled.div`
     display: grid;
     place-content: center;
-    height: 82vh;
-    padding-bottom: 50px;
-
+    height: max-content;
+    padding-bottom: 280px;
     background-color: #345B63;
 
     /* background-image: url('/testBackground.png');
@@ -18,11 +17,11 @@ export const PageWrapper = styled.div`
 export const PageContainer = styled.div`
     display: grid;
     place-content: center;
-    height: 100%;
+
 `;
 
 export const Data = styled.div`
-    --width: 1000px;
+    --width: 1250px;
 
     display: flex;
     padding: 1em;
