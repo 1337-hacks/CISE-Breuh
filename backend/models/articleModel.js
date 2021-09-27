@@ -27,7 +27,11 @@ const ArticleSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  claim_evidence: {
+  claim: {
+    type: String,
+    required: true
+  },
+  evidence: {
     type: String,
     required: true
   }
