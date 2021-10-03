@@ -15,8 +15,5 @@
     "nodemon": "^2.0.12",
     "react-table": "^7.7.0",
     "styled-components": "^5.3.1"
-  },
-  "devDependencies": {
-    "jest": "^27.2.1"
   }
 }
